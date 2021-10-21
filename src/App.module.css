@@ -1,0 +1,14 @@
+.app{
+  background-color: ghostwhite;
+}
+
+.appWrapper{
+  margin: 0 auto;
+  display: grid;
+  width: 90%;
+  min-height: 720px;
+  grid-template-areas: "head head" "main main" "footer footer";
+  grid-template-rows: 80px 1fr 100px;
+  grid-template-columns: 2fr 10fr;
+  grid-row-gap: 2px;
+}
