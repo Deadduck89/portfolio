@@ -2,5 +2,7 @@
     grid-area: head;
     background: linear-gradient(#4169E1,#87CEFA);
     border-radius: 0 0 20% 20%;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
