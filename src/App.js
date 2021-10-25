@@ -9,6 +9,21 @@ const App = () => {
     return (
         <div className={classes.app}>
             <div className={classes.appWrapper}>
+                <Switch>
+                    <ErrorBoundary>
+                        <Suspense fallback={<Preloader/>}>
+                            <Route exact path='/'
+                                   render={() => <Redirect to='/profile'/>}/>
+                            <Route path='/profile/:userId?'
+                                   render={() => <ProfileContainer/>}/>
+                            <Route path='/dialogs'
+                                   render={() =>
+                                       <DialogsContainer/>}/>
+                            <Route path='/login' render={() => <LoginPage/>}/>
+                        </Suspense>
+                    </ErrorBoundary>
+                    <Route exact path='*' render={() => <div>PAGE 404 NOT FOUND</div>}/>
+                </Switch>
                 <Header/>
                 <Main/>
                 <Footer/>
