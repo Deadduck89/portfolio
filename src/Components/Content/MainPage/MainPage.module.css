@@ -1,0 +1,16 @@
+.main {
+    height: 100%;
+    display: grid;
+    grid-template-areas: "hello avatar";
+    grid-template-columns: 6fr 3fr;
+}
+
+.hello {
+    grid-area: hello;
+    text-align: center;
+    font-family: Roboto;
+}
+
+.avatar {
+    grid-area: avatar;
+}
