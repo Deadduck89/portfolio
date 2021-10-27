@@ -1,7 +1,7 @@
 import React from 'react';
-import classes from './Main.module.css'
+import classes from './MainPage.module.css'
 
-const Main = () => {
+const MainPage = () => {
     return (
         <div className={classes.main}>
             Main
@@ -9,4 +9,4 @@ const Main = () => {
     )
 }
 
-export default Main;
+export default MainPage;
