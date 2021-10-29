@@ -21,7 +21,7 @@ const MainPage = () => {
                 <Avatar
                     alt='my avatar'
                     src={avatar}
-                    sx={{width: 200, height: 200}}
+                    sx={{width: 300, height: 300}}
                 />
             </div>
         </div>
