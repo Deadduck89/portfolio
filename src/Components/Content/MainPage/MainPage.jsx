@@ -7,7 +7,6 @@ import MyThemeContext from "../../Common/ThemeContext/ThemeContext";
 const MainPage = (props) => {
 
     const value = useContext(MyThemeContext);
-    console.log(value);
     const theme = value.theme;
 
     return (

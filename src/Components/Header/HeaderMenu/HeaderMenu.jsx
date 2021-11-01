@@ -7,8 +7,8 @@ import MyThemeContext from "../../Common/ThemeContext/ThemeContext";
 const HeaderMenu = () => {
 
     const { theme, setTheme } = useContext( MyThemeContext);
-    const handleChange= () => {
-        setTheme("dark")
+    const handleChange = () => {
+        theme === 'light' ? setTheme("dark") : setTheme("light")
     };
 
     return (
@@ -26,12 +26,9 @@ const HeaderMenu = () => {
                 <NavLink to='/contacts' activeClassName={classes.headerMenuItemActive}>Контакты</NavLink>
             </div>
             <div className={classes.headerMenuItem}>
-                <button onClick={() => setTheme("dark")}>
-                </button>
             <MaterialUISwitch
                 onChange={handleChange}
             />
-            <h1>{theme}</h1>
             </div>
 
         </div>
