@@ -1,12 +1,19 @@
-import React from 'react';
-import classes from './MainPage.module.css'
+import React, { useContext } from 'react';
+import classes from './MainPage.module.css';
 import Avatar from "@mui/material/Avatar";
 import avatar from "../../../Assets/Images/3vjrzd2.png";
+import MyThemeContext from "../../Common/ThemeContext/ThemeContext";
 
-const MainPage = () => {
+const MainPage = (props) => {
+
+    const value = useContext(MyThemeContext);
+    console.log(value);
+    const theme = value.theme;
+
     return (
         <div className={classes.main}>
             <div className={classes.hello}>
+                <span>{theme}</span>
                 <h1>Привет, меня зовут Михаил Дорогин.</h1>
                 <h2> Я фронт энд разработчик</h2>
                 <div className={classes.helloTextBlock}>

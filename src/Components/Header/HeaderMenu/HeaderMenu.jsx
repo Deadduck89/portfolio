@@ -1,9 +1,16 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import classes from './HeaderMenu.module.css';
 import {NavLink} from 'react-router-dom';
 import MaterialUISwitch from "../../Common/Switches/MaterialUISwitch";
+import MyThemeContext from "../../Common/ThemeContext/ThemeContext";
 
 const HeaderMenu = () => {
+
+    const { theme, setTheme } = useContext( MyThemeContext);
+    const handleChange= () => {
+        setTheme("dark")
+    };
+
     return (
         <div className={classes.headerMenu}>
             <div className={classes.headerMenuItem}>
@@ -19,7 +26,12 @@ const HeaderMenu = () => {
                 <NavLink to='/contacts' activeClassName={classes.headerMenuItemActive}>Контакты</NavLink>
             </div>
             <div className={classes.headerMenuItem}>
-            <MaterialUISwitch />
+                <button onClick={() => setTheme("dark")}>
+                </button>
+            <MaterialUISwitch
+                onChange={handleChange}
+            />
+            <h1>{theme}</h1>
             </div>
 
         </div>

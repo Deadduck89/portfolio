@@ -1,14 +1,15 @@
 import ErrorBoundary from "../Common/ErrorBoundary/ErrorBoundary";
 import {Redirect, Route, Switch} from "react-router";
 import MainPage from "./MainPage/MainPage";
-import React from "react";
+import React, {useContext} from "react";
 import classes from './Content.module.css'
 import ProfilePage from "./ProfilePage/ProfilePage";
 import BlogPage from "./BlogPage/BlogPage";
 import ContactsPage from "./ContactsPage/ContactsPage";
 
 
-const Content = () => {
+const Content = (props) => {
+
     return(
         <div className={classes.contentWrapper}>
             <Switch>
@@ -16,7 +17,7 @@ const Content = () => {
                     <Route exact path='/'
                            render={() => <Redirect to='/main'/>}/>
                     <Route path='/main'
-                           render={() => <MainPage/>}/>
+                           render={() => <MainPage theme={props.theme}/>}/>
                     <Route path='/profile'
                            render={() =>
                                <ProfilePage/>}/>
