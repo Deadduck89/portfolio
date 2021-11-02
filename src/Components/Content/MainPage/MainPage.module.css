@@ -9,7 +9,7 @@
     grid-area: hello;
     margin: 0 auto;
     text-align: center;
-    font-family: Manrope, Roboto;
+    font-family: Manrope, Roboto, sans-serif;
 }
 
 .helloTextBlock {
@@ -26,6 +26,5 @@
 
 .avatar {
     grid-area: avatar;
-    margin: 0 auto;
     padding-top: 50px;
 }

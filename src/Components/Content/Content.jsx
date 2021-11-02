@@ -1,7 +1,7 @@
 import ErrorBoundary from "../Common/ErrorBoundary/ErrorBoundary";
 import {Redirect, Route, Switch} from "react-router";
 import MainPage from "./MainPage/MainPage";
-import React, {useContext} from "react";
+import React from "react";
 import classes from './Content.module.css'
 import ProfilePage from "./ProfilePage/ProfilePage";
 import BlogPage from "./BlogPage/BlogPage";
@@ -17,7 +17,7 @@ const Content = (props) => {
                     <Route exact path='/'
                            render={() => <Redirect to='/main'/>}/>
                     <Route path='/main'
-                           render={() => <MainPage theme={props.theme}/>}/>
+                           render={() => <MainPage />}/>
                     <Route path='/profile'
                            render={() =>
                                <ProfilePage/>}/>
