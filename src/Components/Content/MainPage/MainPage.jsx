@@ -3,6 +3,7 @@ import classes from './MainPage.module.css';
 import Avatar from "@mui/material/Avatar";
 import avatar from "../../../Assets/Images/3vjrzd2.png";
 import MyThemeContext from "../../Common/ThemeContext/ThemeContext";
+import classNames from "classnames";
 
 const MainPage = (props) => {
 
@@ -37,11 +38,11 @@ const MainPage = (props) => {
             </div>
         )
     } else {
-        return (<div className={classes.main}>
-                <div className={classes.hello}>
+        return (<div className={classNames(classes.main, classes.mainDark)}>
+                <div className={classNames(classes.hello, classes.helloDark)}>
                     <h1>Меня всё ещё зовут Михаил Дорогин.</h1>
                     <h2> И это моя темная сторона разработчика</h2>
-                    <div className={classes.helloTextBlock}>
+                    <div className={classNames(classes.helloTextBlock, classes.helloTextBlockDark)}>
                         <p>Мне нравится создавать интерактивные и приковывающие внимание интерфейсы, используя
                             Реакт</p>
                         <p>В этом мне помогают знакомство с трюками CSS, JS и богатая фантазия</p>
@@ -50,7 +51,7 @@ const MainPage = (props) => {
                             бережет ваши глаза</p>
                     </div>
                 </div>
-                <div className={classes.avatar}>
+                <div className={classNames(classes.avatar, classes.avatarDark)}>
                     <Avatar
                         alt='my avatar'
                         src={avatar}

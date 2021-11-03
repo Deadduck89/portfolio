@@ -28,3 +28,8 @@
     grid-area: avatar;
     padding-top: 50px;
 }
+
+.mainDark{
+    background-color: #161618;
+    color: #DCDCDC;
+}
