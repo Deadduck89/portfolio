@@ -7,7 +7,6 @@
 }
 .headerMenuItem{
     padding-top: 15px;
-
 }
 a {
     font-size: 22px;
@@ -17,4 +16,17 @@ a {
 }
 a:hover{
     text-shadow: 2px 0px 7px #fff ;
+}
+
+.headerMenuDark {
+    width: 60%;
+    color: #DCDCDC;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-family: Manrope, Roboto;
+}
+
+.headerMenuDark a {
+    color: #DCDCDC;
 }

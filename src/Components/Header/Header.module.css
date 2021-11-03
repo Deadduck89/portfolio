@@ -6,3 +6,12 @@
     justify-content: space-between;
     flex-direction: row;
 }
+
+.headerDark {
+    grid-area: head;
+    background: linear-gradient(#000000,#222222);
+    color: #DCDCDC;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}

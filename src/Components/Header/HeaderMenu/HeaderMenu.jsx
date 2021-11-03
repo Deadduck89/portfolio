@@ -11,8 +11,16 @@ const HeaderMenu = () => {
         theme === 'light' ? setTheme("dark") : setTheme("light")
     };
 
+    let headerMenuStyle = '';
+
+    if (theme === 'light') {
+        headerMenuStyle = classes.headerMenu
+    } else {
+        headerMenuStyle = classes.headerMenuDark
+    }
+
     return (
-        <div className={classes.headerMenu}>
+        <div className={headerMenuStyle}>
             <div className={classes.headerMenuItem}>
                 <NavLink to='/main' activeClassName={classes.headerMenuItemActive}><span>Главная</span></NavLink>
             </div>
