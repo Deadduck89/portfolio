@@ -29,7 +29,7 @@ const Feedback = () => {
                     <DialogTitle>Отправить сообщение</DialogTitle>
                     <DialogContent>
                         <DialogContentText>
-                            Здесь вы можете отправить мне сообщение, мне будет приятен ваш отзыв или предложения (в том
+                            Вы можете отправить мне сообщение, мне будет приятен ваш отзыв или предложения (в том
                             числе о работе, конечно)
                         </DialogContentText>
                         <TextField
@@ -56,6 +56,7 @@ const Feedback = () => {
                             id="text"
                             label="Ваше сообщение"
                             type="text"
+                            multiline
                             fullWidth
                             variant="standard"
                         />
