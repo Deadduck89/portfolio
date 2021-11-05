@@ -20,6 +20,35 @@ const Feedback = () => {
         setOpen( false );
     };
 
+    const [email, setEmail] = React.useState( '' );
+    const [name, setName] = React.useState( '' );
+    const [text, setText] = React.useState( '');
+
+    const onEmailChange = (e) => {
+        setEmail(e.currentTarget.value);
+    };
+
+    const onNameChange = (e) => {
+        setName(e.currentTarget.value);
+    };
+
+    const onTextChange = (e) => {
+        setText(e.currentTarget.value);
+    };
+
+    const feedbackObject = {
+        email: email,
+        name: name,
+        text: text
+    };
+
+    const feedbackMessage = JSON.stringify(feedbackObject)
+
+    const handleSubmit = () => {
+        alert(feedbackMessage);
+        handleClose();
+    }
+
     return (<div className={classes.feedbackButton}>
             <div>
                 <Button variant="contained" onClick={handleClickOpen}>Обратная связь</Button>
@@ -38,6 +67,7 @@ const Feedback = () => {
                             id="name"
                             label="Ваше имя"
                             type="text"
+                            onChange={onNameChange}
                             fullWidth
                             variant="standard"
                         />
@@ -47,6 +77,7 @@ const Feedback = () => {
                             id="email"
                             label="Ваш Email"
                             type="email"
+                            onChange={onEmailChange}
                             fullWidth
                             variant="standard"
                         />
@@ -56,6 +87,7 @@ const Feedback = () => {
                             id="text"
                             label="Ваше сообщение"
                             type="text"
+                            onChange={onTextChange}
                             multiline
                             fullWidth
                             variant="standard"
@@ -63,7 +95,7 @@ const Feedback = () => {
                     </DialogContent>
                     <DialogActions>
                         <Button onClick={handleClose}>Отмена</Button>
-                        <Button onClick={handleClose}>Отправить сообщение</Button>
+                        <Button onClick={handleSubmit}>Отправить сообщение</Button>
                     </DialogActions>
                 </Dialog>
             </div>
