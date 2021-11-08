@@ -5,6 +5,11 @@
     grid-template-columns: 6fr 3fr;
 }
 
+.mainDark{
+    background-color: #161618;
+    color: #DCDCDC;
+}
+
 .hello {
     grid-area: hello;
     margin: 0 auto;
@@ -29,7 +34,3 @@
     padding-top: 50px;
 }
 
-.mainDark{
-    background-color: #161618;
-    color: #DCDCDC;
-}
