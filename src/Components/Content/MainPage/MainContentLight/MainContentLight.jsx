@@ -3,7 +3,7 @@ import React from "react";
 
 
 const MainContentLight = () => {
-    return (<div className={classes.main}>
+    return (
             <div className={classes.hello}>
                 <h1>Привет, меня зовут Михаил Дорогин.</h1>
                 <h2> Я фронт энд разработчик</h2>
@@ -19,7 +19,6 @@ const MainContentLight = () => {
                         и перейти на темную сторону</p>
                 </div>
             </div>
-        </div>
     )
 }
 

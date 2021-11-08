@@ -1,13 +1,12 @@
-import classNames from "classnames";
 import classes from "../MainPage.module.css";
 import React from "react";
 
 const MainContentDark = () => {
-    return (<div className={classNames( classes.main, classes.mainDark )}>
-            <div className={classNames( classes.hello, classes.helloDark )}>
+    return (
+            <div className={classes.hello}>
                 <h1>Меня всё ещё зовут Михаил Дорогин.</h1>
                 <h2> И это моя темная сторона разработчика</h2>
-                <div className={classNames( classes.helloTextBlock, classes.helloTextBlockDark )}>
+                <div className={classes.helloTextBlock}>
                     <p>Мне нравится создавать интерактивные и приковывающие внимание интерфейсы, используя
                         Реакт</p>
                     <p>В этом мне помогают знакомство с трюками CSS, JS и богатая фантазия</p>
@@ -16,7 +15,6 @@ const MainContentDark = () => {
                         бережет ваши глаза</p>
                 </div>
             </div>
-        </div>
     )
 }
 
