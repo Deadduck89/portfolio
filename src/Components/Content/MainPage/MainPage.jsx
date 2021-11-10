@@ -14,19 +14,21 @@ const MainPage = (props) => {
     let mainStyle = '';
     let mainContent = <MainContentLight/>;
 
-    let isLight = (theme==='light') ?  (mainStyle=classes.main, mainContent=<MainContentLight/>) : (mainStyle=classNames(classes.main , classes.mainDark), mainContent=<MainContentDark/>);
+    let isLight = (theme === 'light') ? (mainStyle = classes.main, mainContent =
+        <MainContentLight/>) : (mainStyle = classNames( classes.main, classes.mainDark ), mainContent =
+        <MainContentDark/>);
 
     return (
-            <div className={mainStyle}>
-                {mainContent}
-                <div className={classes.avatar}>
-                    <Avatar
-                        alt='my avatar'
-                        src={avatar}
-                        sx={{width: 300, height: 300}}
-                    />
-                </div>
+        <div className={mainStyle}>
+            {mainContent}
+            <div className={classes.avatar}>
+                <Avatar
+                    alt='my avatar'
+                    src={avatar}
+                    sx={{width: 300, height: 300}}
+                />
             </div>
+        </div>
     )
 }
 

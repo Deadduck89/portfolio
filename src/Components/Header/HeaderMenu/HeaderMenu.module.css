@@ -1,12 +1,13 @@
 .headerMenu{
     width: 60%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
     font-family: Manrope, Roboto;
 }
 .headerMenuItem{
     padding-top: 15px;
+    width: 100px;
 }
 a {
     font-size: 22px;
@@ -22,7 +23,7 @@ a:hover{
     width: 60%;
     color: #DCDCDC;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
     font-family: Manrope, Roboto;
 }
