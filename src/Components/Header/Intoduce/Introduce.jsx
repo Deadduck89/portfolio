@@ -3,13 +3,13 @@ import classes from './Introduce.module.css';
 import logo from '../../../Assets/Icons/Black+Duck.png';
 import Lamp from "../../Common/Lamp/Lamp";
 
-const Introduce = () => {
+const Introduce = ({theme}) => {
     return (
         <div className={classes.introduce}>
-            <img className={classes.logo} src={logo} alt='logo'/>
-            <div className={classes.lamp}>
-            <Lamp/>
-            </div>
+            { (theme==='light') && <img className={classes.logo} src={logo} alt='logo'/>}
+            { (theme==='dark') && <div className={classes.lamp}>
+                <Lamp/>
+            </div>}
         </div>
     )
 };

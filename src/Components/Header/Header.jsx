@@ -21,7 +21,7 @@ const Header = () => {
 
     return (
         <div className={headerStyle}>
-            <Introduce/>
+            <Introduce theme={theme}/>
             <HeaderMenu/>
             <Feedback/>
         </div>
