@@ -7,7 +7,7 @@ const MainContentDark = () => {
             <div className={classes.hello}>
                 <h1 className={styles.h1}>Меня всё ещё зовут Михаил Дорогин.</h1>
                 <h2 className={styles.h2}> И это моя темная сторона разработчика</h2>
-                <div className={classes.helloTextBlock}>
+                <div className={styles.helloTextBlockDark}>
                     <p>Мне нравится создавать интерактивные и приковывающие внимание интерфейсы, используя
                         Реакт</p>
                     <p>В этом мне помогают знакомство с трюками CSS, JS и богатая фантазия</p>
