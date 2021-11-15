@@ -47,8 +47,12 @@ const Feedback = () => {
     const feedbackMessage = JSON.stringify( feedbackObject )
 
     const handleSubmit = () => {
+        if (text !== '') {
         setSuccessAlert(true);
-        handleClose();
+        handleClose();}
+        else {
+            handleClose();
+        }
     };
 
     return (<div className={classes.feedbackButton}>
@@ -73,6 +77,7 @@ const Feedback = () => {
                             id="name"
                             label="Ваше имя"
                             type="text"
+                            value={name}
                             onChange={onNameChange}
                             fullWidth
                             variant="standard"
@@ -83,6 +88,7 @@ const Feedback = () => {
                             id="email"
                             label="Ваш Email"
                             type="email"
+                            value={email}
                             onChange={onEmailChange}
                             fullWidth
                             variant="standard"
@@ -93,6 +99,8 @@ const Feedback = () => {
                             id="text"
                             label="Ваше сообщение"
                             type="text"
+                            value={text}
+                            error={text === ''}
                             onChange={onTextChange}
                             multiline
                             fullWidth
