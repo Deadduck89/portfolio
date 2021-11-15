@@ -7,6 +7,7 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import TextField from "@mui/material/TextField";
 import DialogActions from "@mui/material/DialogActions";
+import Alert from "@mui/material/Alert";
 
 const Feedback = () => {
 
@@ -22,18 +23,19 @@ const Feedback = () => {
 
     const [email, setEmail] = React.useState( '' );
     const [name, setName] = React.useState( '' );
-    const [text, setText] = React.useState( '');
+    const [text, setText] = React.useState( '' );
+    const [successAlert, setSuccessAlert] = React.useState(false);
 
     const onEmailChange = (e) => {
-        setEmail(e.currentTarget.value);
+        setEmail( e.currentTarget.value );
     };
 
     const onNameChange = (e) => {
-        setName(e.currentTarget.value);
+        setName( e.currentTarget.value );
     };
 
     const onTextChange = (e) => {
-        setText(e.currentTarget.value);
+        setText( e.currentTarget.value );
     };
 
     const feedbackObject = {
@@ -42,17 +44,21 @@ const Feedback = () => {
         text: text
     };
 
-    const feedbackMessage = JSON.stringify(feedbackObject)
+    const feedbackMessage = JSON.stringify( feedbackObject )
 
     const handleSubmit = () => {
-        alert(feedbackMessage);
+        setSuccessAlert(true);
         handleClose();
-    }
+    };
 
     return (<div className={classes.feedbackButton}>
             <div>
                 <Button variant="contained" onClick={handleClickOpen}>Обратная связь</Button>
             </div>
+            { successAlert === true ?
+                <div className={classes.alert}>
+                    <Alert  onClose={() => {setSuccessAlert(false)}} severity="success">Спасибо за ваш отзыв!</Alert>
+                </div> : <div></div>}
             <div>
                 <Dialog open={open} onClose={handleClose}>
                     <DialogTitle>Отправить сообщение</DialogTitle>
@@ -97,6 +103,7 @@ const Feedback = () => {
                         <Button onClick={handleClose}>Отмена</Button>
                         <Button onClick={handleSubmit}>Отправить сообщение</Button>
                     </DialogActions>
+
                 </Dialog>
             </div>
         </div>
