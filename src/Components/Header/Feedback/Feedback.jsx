@@ -24,7 +24,7 @@ const Feedback = () => {
     const [email, setEmail] = React.useState( '' );
     const [name, setName] = React.useState( '' );
     const [text, setText] = React.useState( '' );
-    const [successAlert, setSuccessAlert] = React.useState(false);
+    const [successAlert, setSuccessAlert] = React.useState( false );
 
     const onEmailChange = (e) => {
         setEmail( e.currentTarget.value );
@@ -47,29 +47,26 @@ const Feedback = () => {
     const feedbackMessage = JSON.stringify( feedbackObject )
 
     const handleSubmit = () => {
-        if (text !== '') {
-        setSuccessAlert(true);
-        handleClose();}
-        else {
+            setSuccessAlert( true );
             handleClose();
-        }
     };
 
     return (<div className={classes.feedbackButton}>
             <div>
                 <Button variant="contained" onClick={handleClickOpen}>Обратная связь</Button>
             </div>
-            { successAlert === true ?
+            {successAlert === true ?
                 <div className={classes.alert}>
-                    <Alert  onClose={() => {setSuccessAlert(false)}} severity="success">Спасибо за ваш отзыв!</Alert>
+                    <Alert onClose={() => {
+                        setSuccessAlert( false )
+                    }} severity="success">Спасибо за ваш отзыв!</Alert>
                 </div> : <div></div>}
             <div>
                 <Dialog open={open} onClose={handleClose}>
                     <DialogTitle>Отправить сообщение</DialogTitle>
                     <DialogContent>
                         <DialogContentText>
-                            Вы можете отправить мне сообщение, мне будет приятен ваш отзыв или предложения (в том
-                            числе о работе, конечно)
+                            Вы можете отправить мне сообщение, мне будет приятен ваш отзыв или предложения (заполните все поля, пожалуйста)
                         </DialogContentText>
                         <TextField
                             autoFocus
@@ -100,16 +97,18 @@ const Feedback = () => {
                             label="Ваше сообщение"
                             type="text"
                             value={text}
-                            error={text === ''}
                             onChange={onTextChange}
                             multiline
                             fullWidth
+                            helperText="Максимум - 250 символов"
                             variant="standard"
                         />
                     </DialogContent>
                     <DialogActions>
                         <Button onClick={handleClose}>Отмена</Button>
-                        <Button onClick={handleSubmit}>Отправить сообщение</Button>
+                        {name === '' || email === '' || text === '' || name.length > 20 || email.length > 30 || text.length > 250 ?
+                            <Button disabled>Отправить сообщение</Button> :
+                            <Button onClick={handleSubmit}>Отправить сообщение</Button>}
                     </DialogActions>
 
                 </Dialog>
