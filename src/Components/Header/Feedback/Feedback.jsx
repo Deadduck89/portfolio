@@ -8,6 +8,8 @@ import DialogContentText from "@mui/material/DialogContentText";
 import TextField from "@mui/material/TextField";
 import DialogActions from "@mui/material/DialogActions";
 import Alert from "@mui/material/Alert";
+import emailjs from "emailjs-com";
+import apiKey from "../../../emailcontrol/emailkey";
 
 const Feedback = () => {
 
@@ -46,9 +48,21 @@ const Feedback = () => {
 
     const feedbackMessage = JSON.stringify( feedbackObject )
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault(); // Prevents default refresh by the browser
+        emailjs.send(`service_1qdtkbi`, apiKey.TEMPLATE_ID, {
+            name: JSON.stringify(name),
+            email: JSON.stringify(email),
+            text: JSON.stringify(text)
+        }, apiKey.USER_ID)
+            .then((result) => {
             setSuccessAlert( true );
             handleClose();
+            },
+                (error) => {
+                    alert("An error occurred, Please try again");
+                });
+
     };
 
     return (<div className={classes.feedbackButton}>
