@@ -9,7 +9,7 @@ import TextField from "@mui/material/TextField";
 import DialogActions from "@mui/material/DialogActions";
 import Alert from "@mui/material/Alert";
 import emailjs from "emailjs-com";
-import apiKey from "../../../emailcontrol/emailkey";
+import apiKey from "../../../emailcontrol/emailkeys";
 
 const Feedback = () => {
 
