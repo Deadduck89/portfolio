@@ -12,7 +12,7 @@ const MainPage = (props) => {
     const value = useContext( MyThemeContext );
     const theme = value.theme;
     let mainStyle = '';
-    let mainContent = <MainContentLight/>;
+    let mainContent = '';
 
     let isLight = (theme === 'light') ? (mainStyle = classes.main, mainContent =
         <MainContentLight/>) : (mainStyle = classNames( classes.main, classes.mainDark ), mainContent =

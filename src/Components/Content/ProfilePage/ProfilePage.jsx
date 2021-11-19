@@ -8,14 +8,14 @@ const ProfilePage = () => {
         <div className={classes.main}>
             Profile
             <div className={classes.photo}>
-                <img src='' alt=''/>
+                <img src='' alt='my photo'/>
             </div>
             <div className={classes.info}>
                 <div className={classes.infoButtons}>
                     <ButtonGroup variant="outlined" aria-label="outlined button group">
-                        <Button>One</Button>
-                        <Button>Two</Button>
-                        <Button>Three</Button>
+                        <Button>Личное</Button>
+                        <Button>Программирование</Button>
+                        <Button>Проекты</Button>
                     </ButtonGroup>
                 </div>
                 <div className={classes.infoPersonal}>
