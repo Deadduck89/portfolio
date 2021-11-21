@@ -46,8 +46,6 @@ const Feedback = () => {
         text: text
     };
 
-    const feedbackMessage = JSON.stringify( feedbackObject )
-
     const handleSubmit = (e) => {
         e.preventDefault(); // Prevents default refresh by the browser
         emailjs.send(`service_1qdtkbi`, apiKey.TEMPLATE_ID, {

@@ -3,6 +3,7 @@ import classes from './ProfilePage.module.css'
 import ButtonGroup from "@mui/material/ButtonGroup";
 import Button from "@mui/material/Button";
 import ProfileInfoContainer from "./ProfileInfoContainer/ProfileInfoContainer";
+import photo from '../../../Assets/Images/3vjrzd2.png';
 
 const ProfilePage = () => {
 
@@ -21,7 +22,7 @@ const ProfilePage = () => {
     return (
         <div className={classes.main}>
             <div className={classes.photo}>
-                <img src='' alt='my photo'/>
+                <img src={photo} alt='me'/>
             </div>
             <div className={classes.info}>
                 <div className={classes.infoButtons}>
