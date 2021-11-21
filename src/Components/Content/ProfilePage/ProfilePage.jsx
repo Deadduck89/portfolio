@@ -1,50 +1,37 @@
-import React from 'react';
+import React, {useState} from 'react';
 import classes from './ProfilePage.module.css'
 import ButtonGroup from "@mui/material/ButtonGroup";
 import Button from "@mui/material/Button";
+import ProfileInfoContainer from "./ProfileInfoContainer/ProfileInfoContainer";
 
 const ProfilePage = () => {
+
+    const [page,setPage] = useState('personalInfo');
+
+    const changePagePersonal = () => {
+        setPage('personalInfo')
+    };
+    const changePageProgramming = () => {
+        setPage('programmingInfo')
+    };
+    const changePageProjects = () => {
+        setPage('projectsInfo')
+    };
+
     return (
         <div className={classes.main}>
-            Profile
             <div className={classes.photo}>
                 <img src='' alt='my photo'/>
             </div>
             <div className={classes.info}>
                 <div className={classes.infoButtons}>
                     <ButtonGroup variant="outlined" aria-label="outlined button group">
-                        <Button>Личное</Button>
-                        <Button>Программирование</Button>
-                        <Button>Проекты</Button>
+                        <Button onClick={changePagePersonal}>Личное</Button>
+                        <Button onClick={changePageProgramming}>Программирование</Button>
+                        <Button onClick={changePageProjects}>Проекты</Button>
                     </ButtonGroup>
                 </div>
-                <div className={classes.infoPersonal}>
-                    <h2></h2>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-                <div className={classes.infoProgramming}>
-                    <h2></h2>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-                <div className={classes.infoProjects}>
-                    <h2></h2>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
+                <ProfileInfoContainer page={page}/>
             </div>
         </div>
     )
