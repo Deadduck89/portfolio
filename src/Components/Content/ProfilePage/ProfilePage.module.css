@@ -1,12 +1,28 @@
 .main {
     display: flex;
     justify-content: space-around;
+    padding-top: 20px;
 }
 
 .mainDark {
     display: flex;
     justify-content: space-around;
     height: 100%;
+    padding-top: 20px;
     background-color: #161618;
     color: #DCDCDC;
+}
+
+.info {
+    width: 45%;
+}
+
+.photo {
+    width: 30%;
+    padding: 10px;
+}
+.photo img{
+    width: 100%;
+    border: #DCDCDC solid 3px;
+    border-radius: 5px;
 }

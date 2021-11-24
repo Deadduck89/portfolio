@@ -11,9 +11,7 @@ const ProfilePage = () => {
     const value = useContext( MyThemeContext );
     const theme = value.theme;
 
-    let mainStyle = classes.main;
-
-    const isLight = (theme === 'light') ?  (mainStyle = classes.main) : (mainStyle = classes.mainDark);
+    let mainStyle = (theme === 'light') ?  (classes.main) : (classes.mainDark);
 
     const [page,setPage] = useState('personalInfo');
 
