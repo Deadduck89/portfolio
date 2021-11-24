@@ -12,7 +12,7 @@ const PersonalInfo = () => {
                 ornare orci egestas sit amet. Maecenas laoreet fermentum ex ut sodales. Vestibulum ultricies nunc
                 libero, nec mollis nisi faucibus vel. Nam aliquam elit ultrices iaculis luctus. Suspendisse eget turpis
                 at est efficitur tempus quis vitae dui.</p>
-            
+
             <p>Duis non odio dictum, pretium nisl eu, feugiat augue. In maximus nec justo ac malesuada. Aliquam tortor
                 nunc, mollis sit amet elementum id, lacinia ut dolor. Proin vel nisi non turpis condimentum iaculis.
                 Nunc semper nunc risus, eu varius lacus volutpat nec. Aenean vestibulum urna a lorem suscipit semper.
