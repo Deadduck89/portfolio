@@ -6,6 +6,10 @@
 }
 
 .mainDark{
+    height: 100%;
+    display: grid;
+    grid-template-areas: "hello avatar";
+    grid-template-columns: 6fr 3fr;
     background-color: #161618;
     color: #DCDCDC;
 }

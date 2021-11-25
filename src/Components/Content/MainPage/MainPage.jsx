@@ -5,18 +5,13 @@ import avatar from "../../../Assets/Images/3vjrzd2.png";
 import MyThemeContext from "../../Common/ThemeContext/ThemeContext";
 import MainContentLight from "./MainContentLight/MainContentLight";
 import MainContentDark from "./MainContentDark/MainContentDark";
-import classNames from "classnames";
 
 const MainPage = (props) => {
 
     const value = useContext( MyThemeContext );
     const theme = value.theme;
-    let mainStyle = '';
-    let mainContent = '';
-
-    let isLight = (theme === 'light') ? (mainStyle = classes.main, mainContent =
-        <MainContentLight/>) : (mainStyle = classNames( classes.main, classes.mainDark ), mainContent =
-        <MainContentDark/>);
+    let mainStyle = (theme === 'light') ?  classes.main : classes.mainDark;
+    let mainContent = (theme === 'light') ?  <MainContentLight/> : <MainContentDark/>;
 
     return (
         <div className={mainStyle}>
