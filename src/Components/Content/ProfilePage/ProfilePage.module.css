@@ -20,7 +20,7 @@
 .infoProjects li{
     margin-top: 20px;
 }
-.infoProjects a{
+.mainDark .infoProjects a{
     color: #DCDCDC;
 }
 
