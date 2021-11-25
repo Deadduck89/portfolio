@@ -17,6 +17,13 @@
     width: 45%;
 }
 
+.infoProjects li{
+    margin-top: 20px;
+}
+.infoProjects a{
+    color: #DCDCDC;
+}
+
 .photo {
     width: 30%;
     padding: 10px;
