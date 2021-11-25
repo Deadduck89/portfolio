@@ -15,11 +15,8 @@ const ProfilePage = () => {
 
     const [page,setPage] = useState('personalInfo');
 
-    const changePagePersonal = () => {
-        setPage('personalInfo')
-    };
-    const changePageProjects = () => {
-        setPage('projectsInfo')
+    const changePage = (page) => {
+        setPage(page)
     };
 
     return (
@@ -30,8 +27,8 @@ const ProfilePage = () => {
             <div className={classes.info}>
                 <div className={classes.infoButtons}>
                     <ButtonGroup variant="outlined" aria-label="outlined button group">
-                        <Button onClick={changePagePersonal}>О себе</Button>
-                        <Button onClick={changePageProjects}>Проекты</Button>
+                        <Button onClick={() => {changePage('personalInfo')}}>О себе</Button>
+                        <Button onClick={() => {changePage('projectsInfo')}}>Проекты</Button>
                     </ButtonGroup>
                 </div>
                 <ProfileInfoContainer page={page}/>
