@@ -5,28 +5,36 @@ const PersonalInfo = () => {
     return (
         <div className={classes.infoPersonal}>
             <h2>Обо мне</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra nibh sit amet turpis porta
-                imperdiet. Maecenas lobortis ipsum augue, vitae molestie risus varius at. Maecenas laoreet urna sed
-                neque pretium venenatis. Nam finibus cursus augue quis tempor. Sed condimentum suscipit mi et pharetra.
-                Phasellus fringilla volutpat felis, sit amet cursus dui placerat nec. Nam ullamcorper finibus eros, nec
-                ornare orci egestas sit amet. Maecenas laoreet fermentum ex ut sodales. Vestibulum ultricies nunc
-                libero, nec mollis nisi faucibus vel. Nam aliquam elit ultrices iaculis luctus. Suspendisse eget turpis
-                at est efficitur tempus quis vitae dui.</p>
+            <p>
+                Меня зовут Михаил и, как вы поняли из текста на главной странице, я занимаюсь разработкой приложений на
+                React. С программированием я познакомился ещё в школе, но ни Q-Basic, ни Pascal меня не впечатлили.
+                Вернулся к
+                программированию я много лет спустя, просто попробовав порешать задачки, попутно изучая синтаксис разных
+                языков
+                программирования. И тут проснулось моё любопытство, как внутри работает то, чем я пользуюсь столько лет?
+                И так в 30 лет я
+                стал заниматься, начав даже не с изучения web-технологий, а буквально с двоичного кода, с понимания, как
+                работает процессор.
+            </p>
 
-            <p>Duis non odio dictum, pretium nisl eu, feugiat augue. In maximus nec justo ac malesuada. Aliquam tortor
-                nunc, mollis sit amet elementum id, lacinia ut dolor. Proin vel nisi non turpis condimentum iaculis.
-                Nunc semper nunc risus, eu varius lacus volutpat nec. Aenean vestibulum urna a lorem suscipit semper.
-                Donec consectetur porttitor lectus a venenatis. Nullam fermentum tempus aliquet. Nam finibus condimentum
-                interdum. Pellentesque auctor pulvinar magna, quis porttitor felis pellentesque a.</p>
-
-            <p>In hac habitasse platea dictumst. Sed consequat vestibulum lectus, nec consectetur sapien volutpat ac. In
-                euismod vel arcu nec fringilla. Ut volutpat fermentum justo, non hendrerit erat iaculis vitae. Mauris
-                pulvinar purus in purus feugiat, at congue tellus ultrices. Nulla molestie velit mattis justo rutrum
-                tincidunt. Nunc congue libero nec nisi pulvinar, vitae fringilla ipsum tempor. Mauris dictum semper urna
-                nec tempus. Maecenas ultricies faucibus efficitur. Duis sit amet eleifend lectus. Duis odio dui, posuere
-                eu dui vitae, bibendum sagittis turpis. Proin at libero quis erat gravida pulvinar eu sit amet purus.
-                Sed efficitur, urna non vulputate dapibus, leo libero commodo libero, a auctor neque libero nec
-                sapien.</p>
+            <p>
+                И это помогло мне понять, чем я хочу заниматься дальше. Делая первые шаги в создании сайтов, я постоянно
+                натыкался на недостаточность своих знаний. У меня не получилась реализовать свои идеи. Зато, познавая
+                новые
+                технологии, я постоянно испытывал чувство: "Вау, так можно было?!" И примерно такое ощущение мне
+                постоянно даёт JS в
+                целом и конкретно Реакт.
+            </p>
+            <p>
+                Мне нравится сама идея виртуального DOM'а, разделения приложения на компоненты, JSX делает построение
+                приложения невероятно наглядным и удобным, методы жизненных циклов в компонентах дают удивительный
+                контроль над приложением, а хуки будто развязали руки, когда появились в Реакте. Нахвалил технологию,
+                пора и себя нахвалить. В данный момент я ищу работу разработчика, хочется ещё и зарабатывать тем, что
+                мне нравится. Так что, если вы или кто-то вам знакомый ищет человека на вакансию junior'а со знаниями
+                React, Redux, Redux-form, Material UI, CSS, SASS, который разбирается в хуках, санках, БЭМ'е,
+                адаптивности и прочем, обязательно пишите или звоните. Контакты есть внизу, а вверху кнопка с формой
+                обратной связи, с помощью которой вы можете отправить и просто пару добрых слов.
+            </p>
         </div>
     )
 }
