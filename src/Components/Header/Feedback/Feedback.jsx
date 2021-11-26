@@ -40,12 +40,6 @@ const Feedback = () => {
         setText( e.currentTarget.value );
     };
 
-    const feedbackObject = {
-        email: email,
-        name: name,
-        text: text
-    };
-
     const handleSubmit = (e) => {
         e.preventDefault(); // Prevents default refresh by the browser
         emailjs.send(`service_1qdtkbi`, apiKey.TEMPLATE_ID, {
