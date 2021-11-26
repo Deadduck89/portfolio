@@ -1,0 +1,29 @@
+.blog {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    height: 97%;
+}
+
+.blogDark {
+    display: flex;
+    justify-content: space-around;
+    height: 97%;
+    padding-top: 20px;
+    background-color: #161618;
+    color: #DCDCDC;
+}
+
+.blogList {
+    width: 20%;
+    margin-bottom: 20px;
+    border: #DCDCDC 2px solid;
+    border-radius: 5px;
+}
+
+.blogText {
+    width: 60%;
+    margin-bottom: 20px;
+    border: #DCDCDC 2px solid;
+    border-radius: 5px;
+}
