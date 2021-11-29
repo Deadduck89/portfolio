@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, {useState} from 'react';
 import "@fontsource/open-sans";
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
@@ -11,6 +11,9 @@ import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import Content from "./Components/Content/Content";
 import MyThemeContext from "./Components/Common/ThemeContext/ThemeContext";
+import {BrowserRouter} from "react-router-dom";
+import {Provider} from "react-redux";
+import store from "./redux/redux-store";
 
 const App = () => {
 
@@ -30,4 +33,16 @@ const App = () => {
     );
 }
 
-export default App;
+const MyPortfolio = () => {
+    return (
+        <React.StrictMode>
+            <Provider store={store}>
+                <BrowserRouter>
+                    <App/>
+                </BrowserRouter>
+            </Provider>
+        </React.StrictMode>
+    )
+};
+
+export default MyPortfolio;
