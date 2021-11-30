@@ -4,8 +4,8 @@ import MainPage from "./MainPage/MainPage";
 import React from "react";
 import classes from './Content.module.css'
 import ProfilePage from "./ProfilePage/ProfilePage";
-import BlogPage from "./BlogPage/BlogPage";
 import ContactsPage from "./ContactsPage/ContactsPage";
+import BlogPageContainer from "./BlogPage/BlogPageContainer";
 
 
 const Content = (props) => {
@@ -21,7 +21,7 @@ const Content = (props) => {
                     <Route path='/profile'
                            render={() =>
                                <ProfilePage/>}/>
-                    <Route path='/blog' render={() => <BlogPage/>}/>
+                    <Route path='/blog' render={() => <BlogPageContainer/>}/>
                     <Route path='/contacts' render={() => <ContactsPage/>}/>
                 </ErrorBoundary>
                 <Route exact path='*' render={() => <div>PAGE 404 NOT FOUND</div>}/>

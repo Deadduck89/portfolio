@@ -21,6 +21,6 @@ const blogReducer = (state = initialState,action) => {
     }
 }
 
-export const sendArticleCreator = (newArticleText) => ({type: SEND_ARTICLE, newArticleText})
+export const sendNewArticle = (newArticleText) => ({type: SEND_ARTICLE, newArticleText})
 
 export default blogReducer;
