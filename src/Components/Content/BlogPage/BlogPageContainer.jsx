@@ -1,4 +1,3 @@
-import React from "react";
 import {sendNewArticle} from "../../../redux/blog-reducer";
 import {connect} from "react-redux";
 import BlogPage from "./BlogPage";
