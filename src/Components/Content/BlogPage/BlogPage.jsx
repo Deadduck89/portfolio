@@ -1,6 +1,8 @@
 import React, {useContext} from 'react';
 import classes from './BlogPage.module.css'
 import MyThemeContext from "../../Common/ThemeContext/ThemeContext";
+import BlogHeadline from "./BlogHeadline/BlogHeadline";
+import BlogArticle from "./BlogArticle/BlogArticle";
 
 const BlogPage = (props) => {
 
