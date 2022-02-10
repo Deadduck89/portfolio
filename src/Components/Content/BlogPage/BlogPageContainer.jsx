@@ -8,7 +8,8 @@ import BlogPage from "./BlogPage";
 let mapStateToProps = (state) => {
 
     return {
-        blogPage: state.blogPage
+        blogPage: state.blogPage,
+        getArticle: state.getArticle
     }
 }
 

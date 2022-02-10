@@ -21,7 +21,7 @@ const Content = (props) => {
                     <Route path='/profile'
                            render={() =>
                                <ProfilePage/>}/>
-                    <Route path='/blog' render={() => <BlogPageContainer/>}/>
+                    <Route path='/blog/:id?' render={() => <BlogPageContainer/>}/>
                     <Route path='/contacts' render={() => <ContactsPage/>}/>
                 </ErrorBoundary>
                 <Route exact path='*' render={() => <div>PAGE 404 NOT FOUND</div>}/>
