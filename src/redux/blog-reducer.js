@@ -23,8 +23,4 @@ const blogReducer = (state = initialState,action) => {
 
 export const sendNewArticle = (newArticleText) => ({type: SEND_ARTICLE, newArticleText})
 
-export const getArticle = (id) => {
-    return initialState.articles.find(articleId => articleId === id )
-}
-
 export default blogReducer;
