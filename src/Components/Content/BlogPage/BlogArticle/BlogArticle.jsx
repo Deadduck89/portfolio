@@ -1,5 +1,6 @@
 import React from "react";
 import {useParams} from "react-router";
+import classes from '../BlogPage.module.css'
 
 const BlogArticle = (props) => {
     let articleAddress = useParams();
@@ -11,8 +12,8 @@ const BlogArticle = (props) => {
 
 
     return (<div>
-            <h2>{blogPost.headline}</h2>
-            <p>{blogPost.text}</p>
+            <h1>{blogPost.headline}</h1>
+            <p className={classes.blogArticleText} dangerouslySetInnerHTML={{__html: blogPost.text}}/>
         </div>
     )
 }

@@ -17,13 +17,28 @@
 .blogList {
     width: 20%;
     margin-bottom: 20px;
+    padding: 20px;
     border: #DCDCDC 2px solid;
     border-radius: 5px;
+    font-family: Manrope, Roboto;
+}
+.blogDark .blogListElement {
+    color: #DCDCDC;
 }
 
 .blogText {
     width: 60%;
     margin-bottom: 20px;
+    padding: 20px;
     border: #DCDCDC 2px solid;
     border-radius: 5px;
+    font-family: Manrope, Roboto;
+}
+.blogText h1 {
+    text-align: center;
+}
+
+.blogArticleText {
+    margin-top: 40px;
+    font-size: 20px;
 }

@@ -14,13 +14,6 @@ const BlogPage = (props) => {
                                   id={headline.id}/>
     );
 
-    // let articleElement = state.articles.map(
-    //     article => <BlogArticle key={article.id}
-    //                             headline={article.headline}
-    //                             text={article.text}
-    //                             id={article.id}/>
-    // );
-
     const value = useContext( MyThemeContext );
     const theme = value.theme;
 
