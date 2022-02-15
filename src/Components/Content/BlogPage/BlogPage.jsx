@@ -22,7 +22,7 @@ const BlogPage = (props) => {
 
     return (
         <div className={blogStyle}>
-            <div className={classes.blogList}>{headlineElement}</div>
+            <div className={classes.headlineBlock}>{headlineElement}</div>
             <div className={classes.blogText}><BlogArticle articles={state.articles}/></div>
         </div>
     )

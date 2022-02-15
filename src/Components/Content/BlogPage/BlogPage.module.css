@@ -14,7 +14,7 @@
     color: #DCDCDC;
 }
 
-.blogList {
+.headlineBlock {
     width: 20%;
     margin-bottom: 20px;
     padding: 20px;
@@ -41,4 +41,8 @@
 .blogArticleText {
     margin-top: 40px;
     font-size: 20px;
+}
+
+.blogHeadlineList {
+    list-style-type: none;
 }
