@@ -24,6 +24,12 @@
 .mainDark .infoProjects a{
     color: #DCDCDC;
 }
+.infoProjects a{
+    text-decoration: underline;
+}
+.infoProjects a:hover{
+    text-decoration: none;
+}
 
 .photo {
     width: 30%;

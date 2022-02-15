@@ -22,6 +22,9 @@
     border-radius: 5px;
     font-family: Manrope, Roboto;
 }
+.headlineBlock a:hover{
+    text-decoration: underline;
+}
 .blogDark .blogListElement {
     color: #DCDCDC;
 }
@@ -29,9 +32,6 @@
 .blogText {
     width: 60%;
     margin-bottom: 20px;
-    padding: 20px;
-    border: #DCDCDC 2px solid;
-    border-radius: 5px;
     font-family: Manrope, Roboto;
 }
 .blogText h1 {
