@@ -37,6 +37,7 @@
 }
 .photo img{
     width: 100%;
+    max-width: 400px;
     border: #DCDCDC solid 3px;
     border-radius: 5px;
 }
