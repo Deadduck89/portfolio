@@ -27,8 +27,8 @@ const ProfilePage = () => {
             <div className={classes.info}>
                 <div className={classes.infoButtons}>
                     <ButtonGroup variant="outlined" aria-label="outlined button group">
-                        <Button onClick={() => {changePage('personalInfo')}}>О себе</Button>
-                        <Button onClick={() => {changePage('projectsInfo')}}>Проекты</Button>
+                        <Button onClick={() => {changePage('personalInfo')}} title="О себе">О себе</Button>
+                        <Button onClick={() => {changePage('projectsInfo')}} title="Мои проекты">Проекты</Button>
                     </ButtonGroup>
                 </div>
                 <ProfileInfoContainer page={page}/>
