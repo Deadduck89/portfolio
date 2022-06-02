@@ -1,4 +1,4 @@
-.blog {
+.blog, .blogDark{
     display: flex;
     justify-content: space-around;
     padding-top: 20px;
@@ -6,10 +6,6 @@
 }
 
 .blogDark {
-    display: flex;
-    justify-content: space-around;
-    height: 100%;
-    padding-top: 20px;
     background-color: #161618;
     color: #DCDCDC;
 }
@@ -17,7 +13,6 @@
 .headlineBlock {
     width: 20%;
     margin-bottom: 20px;
-    padding: 20px;
     border: #DCDCDC 2px solid;
     border-radius: 5px;
     font-family: Manrope, Roboto;
@@ -27,6 +22,12 @@
 }
 .blogDark .blogListElement {
     color: #DCDCDC;
+}
+.blogHeadlineList li{
+    text-align: center;
+}
+.blogHeadlineList h4{
+    margin: 0;
 }
 
 .blogText {
@@ -39,10 +40,13 @@
 }
 
 .blogArticleText {
-    margin-top: 40px;
+    margin: 40px 0 0 10%;
+
     font-size: 20px;
 }
 
 .blogHeadlineList {
+    margin: 0;
+    padding: 0;
     list-style-type: none;
 }
