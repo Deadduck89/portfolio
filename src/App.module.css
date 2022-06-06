@@ -10,5 +10,4 @@
   min-height: 100vh;
   grid-template-areas: "head head" "main main" "footer footer";
   grid-template-rows: 60px 1fr 100px;
-  grid-template-columns: 2fr 10fr;
 }
