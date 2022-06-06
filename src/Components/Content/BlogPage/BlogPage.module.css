@@ -37,7 +37,7 @@
 
 .blogText {
     width: 60%;
-    margin-bottom: 20px;
+    margin: 20px 0;
     font-family: Manrope, Roboto;
 }
 .blogText h1 {
@@ -47,7 +47,6 @@
 
 .blogArticleText {
     margin: 40px 0 0 10%;
-
     font-size: 20px;
 }
 
