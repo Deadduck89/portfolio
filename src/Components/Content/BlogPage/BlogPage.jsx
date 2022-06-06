@@ -23,7 +23,11 @@ const BlogPage = (props) => {
     return (
         <div className={blogStyle}>
             <div className={classes.blogText}><BlogArticle articles={state.articles}/></div>
-            <div className={classes.headlineBlock}>{headlineElement}</div>
+            <div className={classes.headlineBlock}>
+                <ul className={classes.blogHeadlineList}>
+                    {headlineElement}
+                </ul>
+            </div>
         </div>
     )
 }

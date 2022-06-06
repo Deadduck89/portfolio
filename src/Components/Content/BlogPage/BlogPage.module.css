@@ -23,11 +23,17 @@
 .blogDark .blogListElement {
     color: #DCDCDC;
 }
-.blogHeadlineList li{
-    text-align: center;
+.blogHeadlineList {
+    padding-top: 40px;
 }
-.blogHeadlineList h4{
-    margin: 0;
+.blogHeadlineList li{
+    margin: 10px 0;
+    text-align: center;
+    font-family: Manrope, Roboto;
+}
+.blogHeadlineList li a{
+    font-size: 22px;
+    font-weight: 600;
 }
 
 .blogText {
