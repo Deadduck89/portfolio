@@ -20,11 +20,11 @@
 .headlineBlock a:hover{
     text-decoration: underline;
 }
+.headlineBlock ul{
+    margin: 50px 0;
+}
 .blogDark .blogListElement {
     color: #DCDCDC;
-}
-.blogHeadlineList {
-    padding-top: 40px;
 }
 .blogHeadlineList li{
     margin: 10px 0;
@@ -43,6 +43,7 @@
 }
 .blogText h1 {
     text-align: center;
+    font-size: 40px;
 }
 
 .blogArticleText {
